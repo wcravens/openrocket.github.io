@@ -1,0 +1,33 @@
+{
+  "name": "openrocket.github.io",
+  "version": "0.0.1",
+  "homepage": "https://openrocket.info",
+  "authors": [
+    "Wes Cravens <wcravens@cortex-it.com>"
+  ],
+  "description": "OpenRocket WebSite",
+  "main": "index.html",
+  "license": "CC-BY-SA-4.0",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "bootswatch-paper-wiredep": "*"
+  },
+  "overrides": {
+    "_comment": "A rediculous fix for a controversial break involving bower, wiredep and bootstrap https://github.com/twbs/bootstrap/issues/16663#issuecomment-113204018 https://github.com/twbs/bootstrap-blog/commit/87b41f8c5df68291a1e1a83f972fbdeb4a36a031",
+    "bootstrap": {
+      "main": [
+        "dist/js/bootstrap.js",
+        "dist/css/bootstrap.css",
+        "less/bootstrap.less"
+      ]
+    }
+  }
+}
